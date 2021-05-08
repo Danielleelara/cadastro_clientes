@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta charset="UTF-8" />
+    <title>Cadastro de Clientes</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div class="cadastro">
+      <h1 class="titulo">Cadastro de Clientes</h1>
+
+      <form id="form">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+
+          <div class="form-field">
+            <label> Nome: </label>
+            <input type="text" name="nome" id="nome" required />
+          </div>
+
+          <div class="form-field">
+            <label> E-mail: </label>
+            <input type="email" name="email" id="email" required />
+          </div>
+
+          <div class="form-field">
+            <label> CPF ou CNPJ: </label>
+            <input type="number" name="documento" id="documento" required />
+          </div>
+
+          <div class="form-field">
+            <label> Telefone: </label>
+            <input type="tel" name="telefone" id="telefone" required />
+          </div>
+
+          <div class="form-field">
+            <label> CEP: </label>
+            <input type="text" name="cep" id="cep" required />
+          </div>
+
+          <div class="form-field">
+            <label> Logradouro: </label>
+            <input type="text" name="rua" id="rua" required />
+          </div>
+
+          <div class="form-field">
+            <label> Número: </label>
+            <input type="number" name="numero" id="numero" required />
+          </div>
+
+          <div class="form-field">
+            <label> Bairro: </label>
+            <input type="text" name="bairro" id="bairro" required />
+          </div>
+
+          <div class="form-field">
+            <label> Cidade: </label>
+            <input type="text" name="cidade" id="cidade" required />
+          </div>
+
+          <div class="form-field">
+            <label> Estado: </label>
+            <input type="text" name="estado" id="estado" required />
+          </div>
+
+         
+        </fieldset>
+
+		<button type="submit" id="submitBtn">Cadastrar</button>
+      </form>
+    </div>
+    <div class="table-container">
+      <table class="table">
+        <thead>
+          <tr class="cliente">
+            <th>Nome</th>
+            <th>Email</th>
+            <th>CPF ou CNPJ</th>
+            <th>Telefone</th>
+            <th>CEP</th>
+            <th>Logradouro</th>
+            <th>Número</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-clientes">
+          <tr class="cliente">
+            <td class="nome">Danielle de Souza Andrade</td>
+            <td class="email">dany.sa1@hotmail.com</td>
+            <td class="documento">000.555.777-55</td>
+            <td class="telefone">85.985858585</td>
+            <td class="CEP">61611-600</td>
+            <td class="rua">Rua da Alegria</td>
+            <td class="numero">22</td>
+            <td class="bairro">Céu Azul</td>
+            <td class="cidade">Lindezas</td>
+            <td class="estado">Maravilha</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+
+  <script src="./adicionar_cliente.js" type="text/javascript"></script>
+  <script src="./remover_cliente.js" type="text/javascript"></script>
+</html>
